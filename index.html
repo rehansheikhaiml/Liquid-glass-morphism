@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liquid Workspace</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <h1>Liquid Workspace</h1>
+
+  <div class="workspace-section">
+    <input type="text" id="workspaceInput" placeholder="New Workspace Name">
+    <button onclick="createWorkspace()">Create</button>
+  </div>
+
+  <div id="workspaceList"></div>
+
+  <div id="taskSection" class="hidden">
+    <h2 id="workspaceTitle"></h2>
+    <input type="text" id="taskInput" placeholder="New Task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
